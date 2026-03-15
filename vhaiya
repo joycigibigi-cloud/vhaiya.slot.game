@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Slot Game</title>
+</head>
+
+<body style="text-align:center;font-size:40px;">
+
+<h1>🎰 My Slot Game</h1>
+
+<div id="slot">🍒 🍋 💎</div>
+
+<button onclick="spin()">SPIN</button>
+
+<script>
+function spin(){
+let s=["🍒","🍋","💎","7","⭐"];
+
+let a=s[Math.floor(Math.random()*5)];
+let b=s[Math.floor(Math.random()*5)];
+let c=s[Math.floor(Math.random()*5)];
+
+document.getElementById("slot").innerHTML=a+" "+b+" "+c;
+}
+</script>
+
+</body>
+</html>
